@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
 
-    <title>Your personal website</title>
+    <title>About Me</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -56,7 +56,7 @@
         <div class="row align-items-center">
 
           <div class="col-6 col-xl-2">
-            <h1 class="mb-0 site-logo"><a href="#" class="h2 mb-0">Your Name</a></h1>
+            <h1 class="mb-0 site-logo"><a href="#" class="h2 mb-0">Emmett de Bruin</a></h1>
           </div>
 
           <div class="col-12 col-md-10 d-none d-xl-block">
@@ -86,19 +86,19 @@
         <div class="row">
           <div class="col-lg-6 mb-5" data-aos="fade-up" data-aos-delay="">
 
-            <img src="" alt="Image of you of something fun" class="img-fluid">
+            <img src="images/IDPhoto.jpg" alt="Image of you of something fun" class="img-fluid">
 
           </div>
           <div class="col-lg-5 ml-auto" data-aos="fade-up" data-aos-delay="100">
             <div class="mb-4">
               <p>
-               Who you are
+               I grew up in Long Island, New York and am currently attending my undergraduate at the University of San Diego.
               </p>
               <p>
-                Professional info
+                I am majoring in Computer Science and minoring in Visual Art. I currently work on creating object-oriented programs in order to solve problems. I am also interested in animation making and concept art drawing.
                </p>
                <p>
-                Hobbies
+                In my free time I enjoy playing volleyball. I started out playing beach volleyball with my friends and family, and now I also play indoor with the club team at USD. Two of my other hobbies include going to the gym and playing video games with my friends.
                </p>
 
 
@@ -122,24 +122,27 @@
         </div>
         <div class="row">
           <div class="col-lg-6 mb-5" data-aos="fade-up" data-aos-delay="">
-          
-            <img src="" alt="Image of your project" class="img-fluid">
+            
+            <video src="images/PokemonMockShort.mp4" controls poster="images/VideoCover.png" class="img-fluid">
+              Your browser does not support the video tag.
+            </video>
+            
           
           </div>
           <div class="col-lg-5 ml-auto" data-aos="fade-up" data-aos-delay="100">
             <div class="mb-4">
-              <h3>Project Title</h3>
+              <h3>Pokemon Mock Mini Game</h3>
               <p>
-               Motivation of the project
+               The motivation for this project originated from our groups youth, growing up on the Pokemon games. We knew that a full replica would be a little too much to handle for a project that was only a few weeks long, but we thought it would be very fun to at least mock the sheer fundamentals of the game such as battling. It struck everyones interest because we knew what we were shooting for and it was really enjoyable to watch it take shape.
               </p>
               <p>
-              Functional requirements/what the project does
+              The project works by initializing you as a trainer and gives you a selection of starting pokemon. It then enters a loop asking the player a set of actions they can take. These range from catching a new pokemon, to battling a trainer, or swapping out pokemon with those in their PC. Each of these actions will take you to another function that will handle the users input. For our catching function we randomized which stage one pokemon appears. The user then has a roughly 80% chance to catch the specified pokemon. This pokemon would either be placed in the players party or ,if they had 6 pokemon in the party already, their PC. Each pokemon has base stat values linked as well as evolution level, and possible moves that can be learned. The main loop of actions will repeat until the user decides they are done playing the game and chooses to quit.
               </p>
               <p>
-              Project design
+              While the main focus for design was supposed to be test driven development, it was difficult to fully write our tests since the was much variance that could take place based on how far we wanted to take the project. Instead we wrote out test stubs for cases we knew we needed but left them blank to allow our project to be pliable. We broke the project down by having a group of classes for individual moves and another for the pokemon. Then we created a class to represent the user and a class to represent the NPC you would battle with. Finally we had our simulator class which is used to display our menus and run our program.
               </p>
               <p>
-              Implementation
+              For this project I worked on the menus and formatting that the user has to interact with which is located in the simulator class. I also invested time into researching how base stats for each individual pokemon are used. For reference each pokemon has 6 stat values that are unique to its species. This stats are recalculated based on the level of the pokemon and if that pokemon evolves. Theses stats affect how much attack, hitpoints, defence, etc. a pokemon will have. I coded the equations for these stats, when they get recalculated and linked the unique set of numbers to all of the pokemon in our game.
               </p>
 
 
@@ -171,14 +174,14 @@
           <div class="col-md-12 text-center">
             <p class="mb-0">
               <span class="icon-mail_outline d-block h4 text-primary"></span>
-              <span>email address</span>
+              <span>edebruin@sandiego.edu</span>
             </p>
           </div>
           
           <div class="col-md-12 text-center">
             <p class="mb-0">
               <span class="icon-graduation-cap d-block h4 text-primary"></span>
-              <a href="">Resume</a>
+              <a href="files/Emmett de Bruin_RESUME.pdf">Resume</a>
             </p>
           </div>
         </div>
